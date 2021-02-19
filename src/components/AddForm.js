@@ -24,7 +24,7 @@ const AddForm = (props) => {
         // } else{
             
         // }
-        addSmurf(state);
+        props.addSmurf(state);
     }
 
     // const errorMessage = "";
