@@ -15,6 +15,7 @@ export const fetchSmurfs = () => dispatch => {
         .catch(err => {
             dispatch({ type: FETCH_FAIL, payload: 'There was an error. :(' });
         });
+        /***** I decided to combine our error message function into the full fetchSmurfs action thunk for simplicity. *****/
 }
 
 export const addSmurf = smurf => {

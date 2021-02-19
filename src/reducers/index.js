@@ -29,6 +29,8 @@ const reducer = (state = initialState, action)=>{
                 error: 'Whoops; We\'ve had an error'
             };
 
+            /***** I decided to combine our error message function into the full fetchSmurfs action thunk for simplicity. *****/
+
         case ADD_SMURF:
             return{
             ...state,
